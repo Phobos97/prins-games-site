@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prins Games</title>
+<meta name="description" content="Prins Games is an independent game studio. Our first game, Washout, is coming to Steam in 2027.">
+<meta name="theme-color" content="#141A2E">
+<link rel="canonical" href="https://prins.games/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Prins Games">
+<meta property="og:title" content="Prins Games: makers of Washout">
+<meta property="og:description" content="Move the river and wash out the gold. Washout is coming to Steam in 2027.">
+<meta property="og:url" content="https://prins.games/">
+<meta property="og:image" content="https://prins.games/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/img/crown.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<link rel="preload" href="/fonts/BricolageGrotesque-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Bricolage Grotesque";font-weight:500;font-style:normal;font-display:swap;src:url("/fonts/BricolageGrotesque-Medium.woff2") format("woff2")}
+@font-face{font-family:"Bricolage Grotesque";font-weight:700;font-style:normal;font-display:swap;src:url("/fonts/BricolageGrotesque-Bold.woff2") format("woff2")}
+@font-face{font-family:"Bricolage Grotesque";font-weight:800;font-style:normal;font-display:swap;src:url("/fonts/BricolageGrotesque-ExtraBold.woff2") format("woff2")}
+
+:root{
+  --navy:#141A2E;
+  --cream:#F6ECD8;
+  --paper:#FFF8EA;
+  --gold:#FBB634;
+  --rust:#A94A10;
+  --muted:#5A5F70;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--cream);
+  color:var(--navy);
+  font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-weight:500;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--navy)}
+img{display:block;max-width:100%}
+
+.page{display:flex;min-height:100vh}
+
+.art{flex:1 1 50%;position:sticky;top:0;height:100vh;background:var(--navy);overflow:hidden}
+.art img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+
+main{flex:1 1 50%;display:flex;justify-content:center;padding:56px 32px}
+.col{width:100%;max-width:480px;display:flex;flex-direction:column;gap:28px}
+
+.logo{width:320px;max-width:100%;height:auto;margin-left:-18px}
+h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.game{border-radius:18px;overflow:hidden;background:var(--navy);color:var(--cream)}
+.game img{width:100%;height:auto;aspect-ratio:1232/706}
+.game-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:14px}
+.game-body p{margin:0;font-size:17px;line-height:1.5}
+
+.btn-steam{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  min-height:54px;border-radius:12px;
+  background:var(--gold);color:var(--navy);
+  text-decoration:none;font-weight:800;font-size:18px;
+  transition:background-color .15s;
+}
+.btn-steam:hover{background:#FFD766}
+
+.links{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none}
+.links a{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  min-height:54px;padding:0 20px;border-radius:12px;
+  background:var(--paper);border:2px solid var(--navy);
+  text-decoration:none;font-weight:700;font-size:17px;
+  transition:background-color .15s,color .15s;
+}
+.links a:hover{background:var(--navy);color:var(--cream)}
+.links a:hover .sub{color:#C9C3B4}
+.links .sub{font-weight:500;font-size:15px;color:var(--muted)}
+
+a:focus-visible{outline:3px solid var(--rust);outline-offset:3px}
+
+footer{margin:0;font-size:14px;color:var(--muted)}
+
+@media (max-width:860px){
+  .page{flex-direction:column}
+  .art{display:none}
+  main{padding:28px 20px 40px}
+  .logo{width:260px;margin-left:-14px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="art">
+    <picture>
+      <source type="image/webp" srcset="/img/river-tall.webp">
+      <img src="/img/river-tall.jpg" width="1200" height="1800" alt="A river runs past a boulder through banks of gold nuggets, with pine forest behind">
+    </picture>
+  </div>
+
+  <main>
+    <div class="col">
+      <h1>Prins Games</h1>
+      <img class="logo" src="/img/prins-games-logo.svg" width="702" height="185" alt="Prins Games">
+
+      <section class="game" aria-label="Washout">
+        <picture>
+          <source type="image/webp" srcset="/img/washout-capsule.webp">
+          <img src="/img/washout-capsule.jpg" width="1232" height="706" alt="Washout">
+        </picture>
+        <div class="game-body">
+          <p>Move the river and wash out the gold. Our first game, coming to Steam in 2027.</p>
+          <a class="btn-steam" href="https://store.steampowered.com/app/5506670/">Wishlist Washout on Steam
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+          </a>
+        </div>
+      </section>
+
+      <ul class="links">
+        <li><a href="https://discord.gg/wyRGJKHQDz"><span>Discord</span><span class="sub">Talk with us</span></a></li>
+        <li><a href="https://www.youtube.com/@prins_games"><span>YouTube</span><span class="sub">Trailers and clips</span></a></li>
+        <li><a href="https://x.com/prins_games"><span>X</span><span class="sub">News</span></a></li>
+        <li><a href="mailto:hello@prins.games"><span>Email</span><span class="sub">hello@prins.games</span></a></li>
+      </ul>
+
+      <footer>© 2026 Prins Games · An independent studio in the Netherlands</footer>
+    </div>
+  </main>
+
+</div>
+</body>
+</html>
